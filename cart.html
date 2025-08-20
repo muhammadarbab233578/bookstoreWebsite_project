@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="icon" type ="image/png" href="images/favicon_final.png">
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="headersection">
+            <h1>TheCozyQuill</h1>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="bookdetails.html">BookCategories</a></li>
+                    <li><a href="#">GoToCart</a></li>
+                    <li><a href="bookdetails.html">BookDetails</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="loginsignup.html">Login/Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Shopping Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Book Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/81dQwQlmAXL.AC_UY327_FMwebp_QL65.jpg" alt="Rich Dad Poor Dad" style="width: 50px; height: 75px;"></td>
+                    <td>Rich Dad Poor Dad</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>RS 850.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/51EstVXM1UL.jpg" alt="To Kill a Mockingbird" style="width: 50px; height: 75px;"></td>
+                    <td>Lord of the Rings</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>RS 750.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/81eB+7+CkUL.AC_UY327_FMwebp_QL65.jpg" alt="Pride and Prejudice" style="width: 50px; height: 75px;"></td>
+                    <td>I Love you to the moon and back</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>RS 600.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-actions">
+            <a href="bookdetails.html" class="continue-shopping">Continue Shopping</a>
+            <a href="payment.html">
+                <button class="checkout-btn">Check Out Now</button>
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>
